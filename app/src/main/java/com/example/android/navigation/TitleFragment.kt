@@ -23,7 +23,7 @@ class TitleFragment : Fragment() {
         val binding: FragmentTitleBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_title, container, false)
         //pass lambda
         binding.playButton.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_titleFragment_to_gameFragment)
+            Navigation.findNavController(it).navigate(TitleFragmentDirections.actionTitleFragmentToGameFragment())
             //it.findNavController().navigate(R.id.action_titleFragment_to_gameFragment) //ktx version
         }
 //        //pass interface version
